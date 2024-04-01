@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListaDeAmigos {
+    private List<Usuario> amigos;
+
+    public ListaDeAmigos() {
+        amigos = new ArrayList<>();
+    }
+
+    public void adicionarAmigo(Usuario amigo) {
+        amigos.add(amigo);
+    }
+}
