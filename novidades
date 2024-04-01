@@ -1,0 +1,7 @@
+public class Novidades {
+    public void mostrarNovidades() {
+        System.out.println("Novo jogo 1");
+        System.out.println("Novo jogo 2");
+        System.out.println("Novo jogo 3");
+    }
+}
