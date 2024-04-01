@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListaDeDesejos {
+    private List<Jogo> jogosDesejados;
+
+    public ListaDeDesejos() {
+        jogosDesejados = new ArrayList<>();
+    }
+
+    public void adicionarJogoDesejado(Jogo jogo) {
+        jogosDesejados.add(jogo);
+        System.out.println("Jogo '" + jogo.getNome() + "' adicionado à sua lista de desejos!");
+    }
+}
