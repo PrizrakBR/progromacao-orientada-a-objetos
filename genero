@@ -1,0 +1,7 @@
+public class Genero {
+    public void mostrarJogosPorGenero() {
+        System.out.println("Jogo do gênero A");
+        System.out.println("Jogo do gênero B");
+        System.out.println("Jogo do gênero C");
+    }
+}
