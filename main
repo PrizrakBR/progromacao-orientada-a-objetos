@@ -5,27 +5,4 @@ public class Main {
         Usuario usuario2 = new Usuario("Usuario2");
 
         // Adicionando um usuário à lista de amigos de outro
-        usuario1.adicionarAmigo(usuario2);
-        System.out.println("Usuário1 adicionou Usuário2 à sua lista de amigos.");
-
-        // Comprando um jogo
-        Jogo jogo1 = new Jogo("Jogo1");
-        usuario1.comprarJogo(jogo1);
-
-        // Adicionando um jogo à lista de desejos
-        Jogo jogo2 = new Jogo("Jogo2");
-        usuario1.adicionarJogoDesejado(jogo2);
-
-        // Filtrando o catálogo por novidades
-        Novidades novidades = new Novidades();
-        usuario1.filtrarCatalogoNovidades(novidades);
-
-        // Filtrando o catálogo por gênero
-        Genero genero = new Genero();
-        usuario1.filtrarCatalogoGenero(genero);
-
-        // Filtrando o catálogo por desenvolvedor
-        Desenvolvedor desenvolvedor = new Desenvolvedor();
-        usuario1.filtrarCatalogoDesenvolvedor(desenvolvedor);
-    }
-}
+        usuario1.adicionarAmigo(usuario2
