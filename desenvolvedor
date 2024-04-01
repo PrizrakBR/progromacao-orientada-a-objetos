@@ -1,0 +1,7 @@
+public class Desenvolvedor {
+    public void mostrarJogosPorDesenvolvedor() {
+        System.out.println("Jogos do desenvolvedor X");
+        System.out.println("Jogos do desenvolvedor Y");
+        System.out.println("Jogos do desenvolvedor Z");
+    }
+}
