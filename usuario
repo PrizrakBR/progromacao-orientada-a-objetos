@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Usuario {
+    private String nome;
+    private ListaDeAmigos listaDeAmigos;
+    private Biblioteca biblioteca;
+    private ListaDeDesejos listaDeDesejos;
+
+    public Usuario(String nome) {
+        this.nome = nome;
+        this.listaDeAmigos = new ListaDeAmigos();
+        this.biblioteca = new Biblioteca();
+        this.listaDeDesejos = new ListaDeDesejos();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void adicionarAmigo(Usuario amigo) {
+        listaDeAmigos.adicionarAmigo(amigo);
+    }
+
+    public void comprarJogo(Jogo jogo) {
+        biblioteca.adicionarJogo(jogo);
+    }
+
+    public void adicionarJogoDesejado(Jogo jogo) {
+        listaDeDesejos.adicionarJogoDesejado(jogo);
+    }
+
+    public void filtrarCatalogoNovidades(Novidades novidades) {
+        System.out.println("Mostrando as novidades:");
+        novidades.mostrarNovidades();
+    }
+
+    public void filtrarCatalogoGenero(Genero genero) {
+        System.out.println("Mostrando jogos por gênero:");
+        genero.mostrarJogosPorGenero();
+    }
+
+    public void filtrarCatalogoDesenvolvedor(Desenvolvedor desenvolvedor) {
+        System.out.println("Mostrando jogos por desenvolvedor:");
+        desenvolvedor.mostrarJogosPorDesenvolvedor();
+    }
+}
